@@ -1,0 +1,136 @@
+.TodoList {
+  margin: 0;
+  padding: 0;
+}
+
+.TodoList__item {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 48px;
+  align-items: center;
+  padding: 16px 12px;
+
+  height: 48px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.TodoList__text {
+  display: block;
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0;
+  margin-left: 8px;
+  margin-right: auto;
+  padding: 0;
+  color: #373737;
+}
+.TodoList__text::placeholder {
+  color: #373737;
+  background-color: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+.TodoList__text:hover,
+:focus {
+  background-color: #b3d7ff;
+}
+.TodoList__textcompited {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0;
+  margin-left: 8px;
+  margin-right: auto;
+  padding: 0;
+  color: #a3a3a3;
+}
+
+.TodoList__itemcompleted::before {
+  transform: scaleX(1);
+}
+
+.TodoList__itemcompleted {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  padding: 16px 12px;
+
+  height: 48px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+
+  text-decoration: line-through;
+}
+
+.TodoList__checkbox {
+  cursor: pointer;
+  margin: 0;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: red;
+}
+.TodoList__checkbox:checked {
+  border-color: #b3d7ff;
+  background: red;
+}
+.TodoList__btn {
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: inherit;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  padding: 0;
+}
+.TodoList__btn:not(:last-child) {
+  margin-right: 8px;
+}
+.btn__wrapper {
+  box-sizing: border-box;
+  min-width: 76px;
+}
+.TodoList__btn:hover,
+:focus {
+  background-color: indigo;
+}
+.TodoList__btn:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
